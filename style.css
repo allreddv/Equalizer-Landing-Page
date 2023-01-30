@@ -1,0 +1,408 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+:root {
+
+    --cyan: #66e2dc;
+    --dark-orange: #fa7453;
+    --orange: #ffb964;
+    --white: #fcfaf9;
+    --black: #191825;
+    --font-bold: 700;
+    --font-reg: 500;
+    --font-heading: clamp(4rem, 2.4000rem + 4.4444vw, 8.8rem);
+
+}
+
+html {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    background-color: var(--white);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+ 
+    /* background-color: white; */
+    background-image: url(./images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-position: left 3rem top -20rem;
+    
+
+    
+}
+
+.logo__img {
+    width: 14.6rem ;
+    height: 3.2rem;
+    margin-left: 2.4rem ;
+    margin-top: 4rem;
+
+}
+
+.hero__container {
+    width: 32.7rem;
+    margin: 6.4rem 2.4rem 16.6rem;
+
+}
+
+h1 {
+    width: 32.7rem;
+    /* font-size: var(--font-heading); */
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+   
+}
+
+.hero__text {
+    font-weight: 400;
+    line-height: 2.6rem;
+    max-width: 100vw;
+    margin-top: 2rem;
+}
+
+ 
+.images__container {
+    position: relative;
+}
+.pattern2__container {
+    max-width: 100vw;
+    height: 60rem;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    border-radius: 1.2rem;
+ 
+
+}
+
+.pattern2__img {
+    width: 28rem;
+    height: 42rem;
+    
+}
+
+.app__img {
+    width: 20.9rem;
+    height: 43rem;
+    position: absolute;
+    top: -9.8rem;
+    left: 8rem;
+}
+
+.card-plan__container {
+    background-color: var(--dark-orange);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 4.8rem 3.6rem;
+    border-radius: 1.2rem;
+    position: absolute;
+    top: 37.6rem;
+    max-width: 100vw;
+
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.card-plan__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin-bottom: 3.6rem;
+}
+
+.cost {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+.cost span {
+    font-size:6.5rem;
+    font-weight: 700;
+}
+
+.ios__btn {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1.8rem 7.7rem ;
+    border-radius: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    margin-top: 3.2rem ;
+}
+
+.android__btn {
+    color: var(--black);
+    background-color: var(--white);
+    padding: 1.6rem 7.7rem ;
+    border-radius: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    margin-top: 1.6rem ;
+}
+
+.ios__btn:hover {
+    background-color: var(--cyan);
+}
+
+.android__btn:hover {
+    background-color: var(--orange);    
+}
+
+
+footer {
+    margin-top: 32rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.4rem 8rem 2.4rem;
+    max-width: 100vw;
+    
+}
+
+#logo__footer {
+   margin-left: 0;
+
+}
+
+.contact-us__container {
+    margin-top: 3.2rem;
+    margin-bottom: 6.4rem ;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    padding-right: 3rem;
+}
+
+.contact-us__container span {
+   font-weight: 700; 
+}
+
+.socials-icons__container {
+    display: flex; 
+    width: 10rem;
+    justify-content: space-between; 
+
+}
+
+.card-block__container {
+    display: block;
+    width: 38rem;
+}
+
+.icons__img:hover {
+    filter: invert(52%) sepia(88%) saturate(726%) hue-rotate(326deg) brightness(100%) contrast(97%);
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+    body {
+        background-color: white;
+    }
+     
+    main {
+        background-image:  url(images/bg-pattern-1.svg), url(images/bg-main-tablet.png);
+        background-size: 26.6rem 40rem, 150% 150%;
+        background-position: top -2rem right -3rem, right -10rem top -110rem ;
+        padding: 6.2rem 3.9rem 8.5rem ;
+      
+    }
+
+    .hero__container {
+        width: 52rem;
+        margin-top: 9.5rem;
+    }
+
+    h1 {
+        font-size: 6.4rem ;
+        width: 52rem;
+        line-height: 6.4rem;
+    }
+
+    .hero__text {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        margin-top: 2.8rem;
+    }
+
+    .app__img {
+        width: 27rem;
+        height: 55.6rem;
+        left: 4.5rem;
+        top: -14rem;
+      
+    }
+
+    .images__container {
+        width: 69.6rem;
+        height: 60rem;
+        margin-top: 8.4rem;
+    }
+
+    .card-plan__container {
+        width:40rem ;
+        right: 6rem;
+        top: 18rem;
+    }
+
+    .ios__btn, .android__btn {
+        font-size: 1.7rem;
+    }
+
+    footer {
+        margin-top: 18.3rem ;
+      
+
+    }
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }    
+  .contact-us__container {
+    width: 36.6rem;
+  
+  }
+
+  .socials-icons__container {
+   margin-bottom: 3.5rem;
+  }
+
+  .icons__img {
+    height: 2rem;
+    width: 2rem;
+  }
+  
+
+}
+
+@media screen and (min-width: 1040px) {
+
+    main {
+        min-width: 100vw;
+        background-image:  url(images/bg-pattern-1.svg), url(images/bg-main-desktop.png);
+        background-size: 31.2rem 46.8rem, 150% 150%;
+        background-position: top -3.5rem right 0rem, right -35rem top -30rem ;
+        padding: 6.2rem 16.5rem 9.1rem ;
+      
+    }
+
+    .hero__container {
+        width: 101.5rem;
+        margin-top: 9.5rem;
+    }
+
+    h1 {
+        font-size: 8.8rem ;
+        width: 101.5rem;
+        line-height: 8.8rem;
+    }
+
+    .hero__text {
+        font-size: 2.0rem;
+        line-height: 3.4rem;
+        margin-top: 4rem;
+        width: 82.5rem;
+    }
+
+    .app__img {
+        width: 31.2rem;
+        height: 64.2rem;
+        left: 10.2rem;
+        top: -14rem;
+    }
+
+    .pattern2__img {
+        width: 31.2rem;
+        height: 46.8rem;
+        position: relative;
+        left: -6rem;
+        top: -4rem;
+    }
+
+    .images__container {
+        width: 111rem;
+        height: 60rem;
+        margin-top: 15.5 rem;
+    }
+
+    .card-plan__container {
+        width:44.6rem ;
+        right: 9.5rem;
+        top: 9rem;
+    }
+
+    .card-plan__text {
+        font-size: 2rem;
+        line-height: 3.4rem;
+        margin-top: 2.2rem;
+    }
+
+    h2  {
+        font-size: 4rem;
+    }
+
+    .ios__btn, .android__btn {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        margin-top: 20.2rem ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+       
+    
+
+    }
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30rem;
+    }  
+
+    .contact-us__container {
+        padding-right: 3rem;
+        width: 37rem;
+
+    }
+
+    .socials-icons__container {
+    margin-bottom: 3.5rem;
+    }
+
+    .icons__img {
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    .logo__footer {
+        padding-top: 10rem;
+    }
+}
